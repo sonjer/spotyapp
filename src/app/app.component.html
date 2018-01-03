@@ -1,0 +1,19 @@
+
+<app-navbar></app-navbar>
+
+<div class="container">
+ <router-outlet></router-outlet>
+
+</div>
+
+
+<div class="container">
+
+  <ag-grid-angular style="width: 800px; height: 200px;" class="ag-theme-blue"
+                   [rowData]="rowData"
+                   [columnDefs]="columnDefs"
+                   [enableSorting]="true"
+                   [enableFilter]="true">
+
+  </ag-grid-angular>
+</div>
