@@ -32,8 +32,13 @@ export class AppComponent {
       {headerName: "WEBSITE", field: "website", width: 300},
       {headerName: "EMAIL", field: "email", width: 300},
       {headerName: "COMPANY", field: "company.name", width: 300},
+<<<<<<< HEAD
       {headerName: "COMPANY BS", field: "company.bs", width: 300},
       {headerName: "COMPANY CATCHPHRASE", field: "company.catchPhrase", width: 300}
+=======
+      {headerName: "NAME", field: "name", width: 300},
+      {headerName: "PHONE", field: "phone", width: 300}
+>>>>>>> 426e9191e2e0d0ef66a295709f433f21e2bf3df2
     ];
 
   }
