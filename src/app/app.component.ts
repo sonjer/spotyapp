@@ -10,13 +10,30 @@ import {SpotifyService} from './services/spotify.service';
 export class AppComponent {
   columnDefs;
   rowData;
+  data2:any[]=[];
 
   constructor(public _spotify: SpotifyService) {
-    this._spotify.getArtistas();
+    this._spotify.getArtistas().then( valido =>{
+      if(valido){
+        this.data2 = this._spotify.data;
+        console.log(this.data2);
+      }else{
+        console.log("No hay Artistas");
+      }
+    }).catch(error =>{
+      console.log("Error al obtener los artistas " +error);
+    });
+
     this.columnDefs = [
-      {headerName: "Marca", field: "marca", width: 300},
-      {headerName: "Modelo", field: "modelo", width: 300},
-      {headerName: "Precio", field: "precio", width: 300}
+      {headerName: "ID", field: "id", width: 300},
+      {headerName: "NAME", field: "name", width: 300},
+      {headerName: "PHONE", field: "phone", width: 300},
+      {headerName: "USERNAME", field: "username", width: 300},
+      {headerName: "WEBSITE", field: "website", width: 300},
+      {headerName: "EMAIL", field: "email", width: 300},
+      {headerName: "COMPANY", field: "company.name", width: 300},
+      {headerName: "NAME", field: "name", width: 300},
+      {headerName: "PHONE", field: "phone", width: 300}
     ];
 
     this.rowData = [
