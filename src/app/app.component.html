@@ -10,11 +10,19 @@
 <div class="container">
 
 
-  <ag-grid-angular style="width: 1050px; height: 250px;" class="ag-theme-blue"
+  <ag-grid-angular style="width: 1050px; height: 250px;" class="ag-theme-material"
                    [rowData]="data2"
                    [columnDefs]="columnDefs"
+                   [enableFilter]="true"
+                   [enableColResize]="true"
+                   [groupHeaderHeight]="groupHeaderHeight"
+                   [headerHeight]="headerHeight"
+                   [floatingFiltersHeight]="floatingFiltersHeight"
+                   [pivotGroupHeaderHeight]="pivotGroupHeaderHeight"
+                   [pivotHeaderHeight]="pivotHeaderHeight"
+
                    [enableSorting]="true"
-                   [enableFilter]="true">
+                   [showToolPanel]="true">
 
   </ag-grid-angular>
 </div>

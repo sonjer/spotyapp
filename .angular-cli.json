@@ -20,7 +20,7 @@
       "prefix": "app",
       "styles": [
         "styles.css",
-        "../node_modules/ag-grid/dist/styles/ag-theme-blue.css",
+        "../node_modules/ag-grid/dist/styles/ag-theme-material.css",
         "../node_modules/ag-grid/dist/styles/ag-grid.css"
       ],
       "scripts": [],

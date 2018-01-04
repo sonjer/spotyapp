@@ -8,6 +8,7 @@ import {SpotifyService} from './services/spotify.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  private gridApi;
   columnDefs;
   rowData;
   data2:any[]=[];
@@ -36,5 +37,7 @@ export class AppComponent {
       {headerName: "COMPANY CATCHPHRASE", field: "company.catchPhrase", width: 300}
     ];
 
+
   }
+
 }
