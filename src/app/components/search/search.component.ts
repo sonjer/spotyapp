@@ -10,7 +10,7 @@ export class SearchComponent implements OnInit {
 
   constructor(public _spotify: SpotifyService) {
 
-    this._spotify.getArtistas();
+    //this._spotify.getArtistas();
   }
 
   ngOnInit() {
