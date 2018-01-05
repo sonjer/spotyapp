@@ -8,21 +8,19 @@
 
 
 <div class="container">
-
-
-  <ag-grid-angular style="width: 1050px; height: 250px;" class="ag-theme-material"
+  <button (click)="onBtCopyRows()">COPIAR SELECCIONADOS</button>
+  <label style="margin-left: 20px;">
+    <button (click)="onBtExport()">Export to CSV</button>
+  </label>
+  <ag-grid-angular style="width: 1080px; height: 300px;" class="ag-theme-dark"
                    [rowData]="data2"
                    [columnDefs]="columnDefs"
+                   [debug]="true"
                    [enableFilter]="true"
                    [enableColResize]="true"
-                   [groupHeaderHeight]="groupHeaderHeight"
-                   [headerHeight]="headerHeight"
-                   [floatingFiltersHeight]="floatingFiltersHeight"
-                   [pivotGroupHeaderHeight]="pivotGroupHeaderHeight"
-                   [pivotHeaderHeight]="pivotHeaderHeight"
-
                    [enableSorting]="true"
-                   [showToolPanel]="true">
+                   [rowSelection]="rowSelection"
+                   >
 
   </ag-grid-angular>
 </div>
