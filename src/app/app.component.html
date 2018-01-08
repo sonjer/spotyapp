@@ -1,26 +1,13 @@
 
 <app-navbar></app-navbar>
-
+<br>
+<br>
+<br>
 <div class="container">
- <router-outlet></router-outlet>
+
+      <router-outlet></router-outlet>
 
 </div>
 
 
-<div class="container">
-  <button (click)="onBtCopyRows()">COPIAR SELECCIONADOS</button>
-  <label style="margin-left: 20px;">
-    <button (click)="onBtExport()">Export to CSV</button>
-  </label>
-  <ag-grid-angular style="width: 1080px; height: 300px;" class="ag-theme-dark"
-                   [rowData]="data2"
-                   [columnDefs]="columnDefs"
-                   [debug]="true"
-                   [enableFilter]="true"
-                   [enableColResize]="true"
-                   [enableSorting]="true"
-                   [rowSelection]="rowSelection"
-                   >
 
-  </ag-grid-angular>
-</div>
