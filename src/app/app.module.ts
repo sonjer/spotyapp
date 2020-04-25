@@ -15,12 +15,14 @@ import { app_routing} from './app.routes';
 
 import { SpotifyService} from './services/spotify.service';
 import {HttpClientModule} from '@angular/common/http';
+import { MovieComponent } from './components/Movies/movie.components';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     SearchComponent,
+    MovieComponent,
     NavbarComponent
   ],
   imports: [
