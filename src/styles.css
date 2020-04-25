@@ -5,11 +5,11 @@ body{
 }
 
 hr{
-  border-color: white;
+  border-color: rgb(rgb(252, 248, 248));
 }
 
 .jumbotron{
-  background-color: #171717;
+  background-color: black;
 }
 
 .puntero{
@@ -69,3 +69,8 @@ hr{
 .fadeIn {
   animation-name: fadeIn;
 }
+ .bg-dark{
+   background-color: black !important;
+ }
+ 
+ 
