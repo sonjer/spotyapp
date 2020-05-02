@@ -7,7 +7,7 @@ import {SpotifyService} from '../../services/spotify.service';
   templateUrl: './search.component.html',
 })
 export class SearchComponent {
-  private columnDefs;
+  columnDefs;
 
   data2: any [] = [];
 
